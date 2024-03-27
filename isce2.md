@@ -19,13 +19,15 @@ It is recommended that we install ISCE2 to a dedicated venv to avoid packages co
     mamba activate isce2
     mamba install git cython gdal h5py libgdal pytest numpy fftw scipy pybind11 shapely opencv
 
-3. Download and Compile ISCE2
-
-First we load the CUDA compiler, 
+Use the CUDA 12 and GCC 11 compilers coming with HPC, with 
 
     module load cuda 
     
 Remember also, when you run isce2, or in the slurm script, please add this line first. 
+
+Also the HPC already has openmotif library installed for mdx. No need to install them from mamba/conda. 
+
+3. Download and Compile ISCE2
 
 Download the most recent version or a release version from [ISCE2 github page](https://github.com/isce-framework/isce2),
 
