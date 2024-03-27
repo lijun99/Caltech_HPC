@@ -17,7 +17,7 @@ It is recommended that we install ISCE2 to a dedicated venv to avoid packages co
 
     mamba create -n isce2
     mamba activate isce2
-    mamba install git cython gdal h5py libgdal pytest numpy fftw scipy opencv pybind11 shapely opencv
+    mamba install git cython gdal h5py libgdal pytest numpy fftw scipy pybind11 shapely opencv
 
 3. Download and Compile ISCE2
 
